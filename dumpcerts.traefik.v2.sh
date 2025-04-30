@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Copyright (c) 2017 Brian 'redbeard' Harrington <redbeard@dead-city.org>
-# From https://gist.github.com/chetan/9cd8b98d68864dd04ee239f14713df06
 #
 # dumpcerts.sh - A simple utility to explode a Traefik acme.json file into a
 #                directory of certificates and a private key
@@ -31,6 +30,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# From https://gist.github.com/chetan/9cd8b98d68864dd04ee239f14713df06
 # Original from https://github.com/hardware/mailserver/blob/master/rootfs/usr/local/bin/dumpcerts.traefik.v2.sh
 
 # Exit codes:

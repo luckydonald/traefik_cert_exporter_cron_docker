@@ -9,5 +9,5 @@ services:
       CRON_SCHEDULE: "${CRON_SCHEDULE:-1 * * * *}"  # default: every hour at minute :01
       COMMAND: "${COMMAND:-/home/dumpcerts.traefik.v2.sh /data/coolify/proxy/ /data/exported_ssl_certs/}"
     volumes:
-      - "${DIR_ACME_JSON:-/data/coolify/proxy/}:${DIR_ACME_JSON:-/data/coolify/proxy/}:ro"
-      - "${DIR_CERT_OUTPUT:-/data/exported_ssl_certs/}:${DIR_CERT_OUTPUT:-/data/exported_ssl_certs/}:rw"
+      - "/data/coolify/proxy/:/data/coolify/proxy/:ro"
+      - "/data/exported_ssl_certs/:/data/exported_ssl_certs/:rw"

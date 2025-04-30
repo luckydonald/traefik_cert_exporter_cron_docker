@@ -6,7 +6,7 @@ services:
     build:
       dockerfile: Dockerfile
     environment:
-      CRON_SCHEDULE: "1 * * * *"  # every hour at minute :01
+      CRON_SCHEDULE: "${CRON_SCHEDULE:-1 * * * *}"  # default: every hour at minute :01
       COMMAND: "dumpcerts.traefik.v2.sh /data/coolify/proxy/ /data/exported_ssl_certs/"
     volumes:
       - "/data/coolify/proxy/:/data/coolify/proxy/:ro"

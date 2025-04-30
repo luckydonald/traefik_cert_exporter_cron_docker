@@ -12,5 +12,5 @@ RUN apt-get update \
  && done \
  ;
 CMD [ "/home/entrypoint.sh" ]
-COPY --chmod 775 ./entrypoint.sh  /home/
-COPY --chmod 775 ./dumpcerts.traefik.v2.sh  /home/
+COPY --chmod=775 ./entrypoint.sh  /home/
+COPY --chmod=775 ./dumpcerts.traefik.v2.sh  /home/

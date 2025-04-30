@@ -9,7 +9,7 @@ RUN apt-get update \
      cron \
      jq \
      openssl \
- && done \
+ && echo done \
  ;
 CMD [ "/home/entrypoint.sh" ]
 COPY --chmod=775 ./entrypoint.sh  /home/
